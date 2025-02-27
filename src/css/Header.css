@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.header-section{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    padding: .4em 1em;
+    margin: .5em;
+    background: #c0c0c0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    font-family: "Press Start 2P", system-ui;
+}
+.navbar{
+    display: flex;
+    gap: 1.2em;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #000000;
+}
+.contact-svg{
+    width: 30px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header{
+        border-radius: 0;
+    }
+    .navbar {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        margin: 0;
+        padding: .5em 0.5em;
+    }
+    .navbar {
+        gap: 0.5em;
+    }
+    .contact-svg {
+        width: 25px;
+    }
+}

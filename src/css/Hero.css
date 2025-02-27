@@ -1,0 +1,47 @@
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+.hero-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    max-width: 950px;
+    width: 100%;
+}
+.job-title{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.3em;
+}
+.description{
+    padding: 1em 0;
+    font-family: "Roboto", sans-serif;
+    font-size: .9em;
+}
+.social-links{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    gap: 20px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: .2em 1em;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.links a{
+    text-decoration: none;
+    color: #000000;
+}
+.icons{
+    width: 24px;
+}
+.image-section{
+    background: turquoise;
+}
