@@ -43,5 +43,58 @@
     width: 24px;
 }
 .image-section{
-    background: turquoise;
+    display: flex;
+    justify-content: right;
+}
+.profile-image{
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        padding: .5em;
+        margin: 1em;
+    }
+    .job-title {
+        font-size: 1.1em;
+    }
+    .description {
+        font-size: .85em;
+    }
+    .image-section{
+        justify-content: center;
+    }
+    .profile-image{
+        max-width: 360px;
+    }
+    .links{
+        background: #B0B0B0;
+    }
+    .social-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4px;
+        border-radius: 3px;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+    .hero-section {
+        margin-top: 2em;
+    }
+    .job-title {
+        font-size: 1em;
+    }
+    .description {
+        font-size: .8em;
+    }
+    .links {
+        padding: .2em .5em;
+    }
+    .icons {
+        width: 20px;
+    }
 }

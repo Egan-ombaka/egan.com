@@ -1,0 +1,41 @@
+.github-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em;
+}
+.graph-container{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    font-family: "Roboto", sans-serif;
+    max-width: 950px;
+    padding: 3em;
+    width: 100%;
+    background: #c0c0c0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .github-section {
+        margin: 2em;
+    }
+
+    .graph-container {
+        padding: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .github-section {
+        margin: 1em;
+    }
+
+    .graph-container {
+        padding: 1em;
+    }
+}

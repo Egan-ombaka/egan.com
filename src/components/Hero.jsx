@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='image-section'>
-          {/* Add your image or other content here */}
+          <img className='profile-image' src="images/eganh.jpeg" alt="Egan Ombaka" />
         </div>
       </div>
     </div>
