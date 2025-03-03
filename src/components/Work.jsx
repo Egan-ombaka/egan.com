@@ -3,7 +3,7 @@ import "../css/Work.css";
 
 const workExperiences = [
   {
-    companyLogo: "images/mac.jpg",
+    companyLogo: "images/mac.png",
     companyName: "Mac E. Electricals",
     duration: "Nov 2024 to PRESENT",
     position: "Front-end Software Engineer",
