@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import Github from "./components/Github"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
@@ -24,6 +25,7 @@ function App() {
     <Github />
     <Work />
     <MovingIcons icons={icons}/>
+    <Footer />
   </div>
 }
 export default App
