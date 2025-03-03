@@ -1,33 +1,35 @@
-.techstack-section{
+
+
+.techstack-section {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
 }
-.techstack-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+.techstack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 950px;
   width: 100%;
-  padding: 1em;
+  height: 100px;
   overflow: hidden;
   border-radius: 8px;
   background: rgba(10, 133, 10, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.tech-logo{
-  width: 80px;
-  animation: scroll 10s ease-in-out infinite;
-}
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.tech-logo {
+  width: 80px;
+  padding: .5em;
+  border-radius: 6px;
+  left: max(calc(200px * 10), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /* Responsive adjustments */

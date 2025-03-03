@@ -8,7 +8,7 @@ const MovingIcons = ({ icons }) => {
         {icons.map((icon, index) => (
           <img
             key={index}
-            className="tech-logo"
+            className={`tech-logo item item${index + 1}`}
             src={icon.src}
             alt={icon.alt}
           />
