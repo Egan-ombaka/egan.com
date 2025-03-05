@@ -3,6 +3,7 @@ import Github from "./components/Github"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import MovingIcons from "./components/MovingIcons"
+import Spotify from "./components/Spotify"
 import Work from "./components/Work"
 
 const icons = [
