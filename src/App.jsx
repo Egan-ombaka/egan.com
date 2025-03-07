@@ -4,9 +4,7 @@ import Github from "./components/Github";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MovingIcons from "./components/MovingIcons";
-import Spotify from "./components/Spotify";
 import Work from "./components/Work";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 
@@ -29,12 +27,20 @@ function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case "about":
-        return <About />;
       case "projects":
-        return <Projects />;
+        return (
+          <>
+            <Projects />
+            <Footer />
+          </>
+        );
       case "blog":
-        return <Blog />;
+        return (
+          <>
+            <Blog />
+            <Footer />
+          </>
+        );
       default:
         return (
           <>

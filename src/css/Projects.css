@@ -1,0 +1,46 @@
+.projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.project-container{
+    max-width: 950px;
+}
+.project-card{
+    max-width: 410px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+    background: rgba(128, 128, 128, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.project-image{
+    max-width: 400px;
+    border-radius: 8px;
+}
+.project-des{
+    font-size: .8em;
+    padding: .5em 0;
+}
+.tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.tech div{
+    display: flex;
+    background: white;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    padding: .4em;
+}
+.project-links{
+    display: flex;
+    justify-content: right;
+    margin: .3em;
+    gap: 10px;
+    padding: .4em;
+}
