@@ -36,7 +36,15 @@ function App() {
       case "blog":
         return <Blog />;
       default:
-        return <Hero />;
+        return (
+          <>
+            <Hero />
+            <Github />
+            <Work />
+            <MovingIcons icons={icons} />
+            <Footer />
+          </>
+        );
     }
   };
 
@@ -44,15 +52,6 @@ function App() {
     <div>
       <Header setCurrentPage={setCurrentPage} />
       {renderPage()}
-      {currentPage === "home" && (
-        <>
-          <Hero />
-          <Github />
-          <Work />
-          <MovingIcons icons={icons} />
-          <Footer />
-        </>
-      )}
     </div>
   );
 }

@@ -23,6 +23,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .logo{
+    cursor: pointer;
     font-family: "Press Start 2P", system-ui;
 }
 .navbar{
@@ -33,10 +34,12 @@
     font-weight: 600;
 }
 .navbar li a{
+    cursor: pointer;
     text-decoration: none;
     color: #000000;
 }
 .contact-svg{
+    cursor: pointer;
     width: 30px;
 }
 /* Responsive Design */
