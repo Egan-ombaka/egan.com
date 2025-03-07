@@ -16,7 +16,7 @@ This is the portfolio website of Egan Ombaka, a Full-Stack Software Engineer and
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/eganh-portfolio.git
+    git clone https://github.com/egan-ombaka/eganh-portfolio.git
     cd eganh-portfolio
     ```
 
