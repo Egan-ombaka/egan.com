@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-dom";
 import "../css/Header.css";
 
-const Header = () => {
+const Header = ({ setCurrentPage }) => {
   return (
     <div className="header-section">
       <div className="header">
@@ -12,13 +11,13 @@ const Header = () => {
 
         <ul className="navbar">
           <li>
-            <Link to="/about">About</Link>
+            <a onClick={() => setCurrentPage("about")}>About</a>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <a onClick={() => setCurrentPage("projects")}>Projects</a>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <a onClick={() => setCurrentPage("blog")}>Blog</a>
           </li>
         </ul>
 
