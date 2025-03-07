@@ -16,7 +16,8 @@ const icons = [
   {src: 'icons/icon7.svg', alt: 'React.JS'},
   {src: 'icons/linux.svg', alt: 'React.JS'},
   {src: 'icons/figma.svg', alt: 'React.JS'},
-  {src: 'icons/docker.svg', alt: 'React.JS'},
+  {src: 'icons/docker.svg', alt: 'Docker'},
+  {src: 'icons/eclipse.svg', alt: 'Eclipse JAVA IDE'},
 ]
 
 function App() {
