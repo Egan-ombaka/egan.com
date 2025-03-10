@@ -6,7 +6,12 @@
 }
 .project-container{
     max-width: 950px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
+
 .project-card{
     max-width: 410px;
     border: 1px solid rgba(255, 255, 255, 0.2);

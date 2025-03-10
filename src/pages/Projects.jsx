@@ -10,9 +10,18 @@ const projectsData = [
     webLink: "",
     sourceCodeLink: ""
   },
-  // Add more projects here
+  //more projects
   {
-    image: "images/portfolio.png",
+    image: "images/project.jpg",
+    title: "Spotify stats",
+    description: "This is the portfolio website of Egan Ombaka, a Full-Stack Software Engineer and Entrepreneur. The website showcases Egan's skills, work experience, and contributions to various projects.",
+    tech: ["REACT", "API"],
+    webLink: "",
+    sourceCodeLink: ""
+  },
+
+  {
+    image: "images/project.jpg",
     title: "Spotify stats",
     description: "This is the portfolio website of Egan Ombaka, a Full-Stack Software Engineer and Entrepreneur. The website showcases Egan's skills, work experience, and contributions to various projects.",
     tech: ["REACT", "API"],
