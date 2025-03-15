@@ -4,9 +4,29 @@ import "../css/Header.css";
 
 const Header = ({ setCurrentPage }) => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await fetch("http://localhost:5000/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
+    });
+    const result = await response.text();
+    console.log(result);
+    // Clear the form
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -39,12 +59,34 @@ const Header = ({ setCurrentPage }) => {
             <div className="dropdown-toggle">
               <div className="dropdown-menu">
                 <h1 className="lets-connect">Let's Connect</h1>
-                <div className="input">
-                  <input className="input-name" type="text" />
-                  <input className="input-email" type="text" />
-                  <input className="input-mesage" type="text" />
-                </div>
-                <button className="submit">SUBMIT</button>
+                <form onSubmit={handleSubmit}>
+                  <div className="input">
+                    <input
+                      className="input-name"
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Name"
+                    />
+                    <input
+                      className="input-email"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Email"
+                    />
+                    <input
+                      className="input-message"
+                      type="text"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      placeholder="Message"
+                    />
+                  </div>
+                  <button className="submit" type="submit">
+                    SUBMIT
+                  </button>
+                </form>
                 <div className="direct-contact">
                   <button className="email">email</button>
                   <button className="whatsapp">WhatsApp</button>
