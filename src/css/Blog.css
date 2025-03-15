@@ -1,0 +1,12 @@
+.blogsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    gap: 20px;
+}
+.warning {
+    width: 40px;
+}
