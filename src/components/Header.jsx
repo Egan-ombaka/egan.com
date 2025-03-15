@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/Dropdown.css";
 import "../css/Header.css";
 
 const Header = ({ setCurrentPage }) => {
@@ -27,13 +28,28 @@ const Header = ({ setCurrentPage }) => {
           </li>
         </ul>
 
-        <div className="contact-icon" onClick={toggleDropdown}>
-          <img className="contact-svg" src="icons/contact.svg" alt="Connect" />
+        <div className="contact-icon">
+          <img
+            className="contact-svg"
+            onClick={toggleDropdown}
+            src="icons/contact.svg"
+            alt="Connect"
+          />
           {isDropdownVisible && (
-            <div className="dropdown-menu">
-              <a href="#contact1">Contact 1</a>
-              <a href="#contact2">Contact 2</a>
-              <a href="#contact3">Contact 3</a>
+            <div className="dropdown-toggle">
+              <div className="dropdown-menu">
+                <h1 className="lets-connect">Let's Connect</h1>
+                <div className="input">
+                  <input className="input-name" type="text" />
+                  <input className="input-email" type="text" />
+                  <input className="input-mesage" type="text" />
+                </div>
+                <button className="submit">SUBMIT</button>
+                <div className="direct-contact">
+                  <button className="email">email</button>
+                  <button className="whatsapp">WhatsApp</button>
+                </div>
+              </div>
             </div>
           )}
         </div>
