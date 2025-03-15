@@ -1,6 +1,6 @@
 # Egan Ombaka Portfolio
 
-This is the portfolio website of Egan Ombaka, a Full-Stack Software Engineer and Entrepreneur. The website showcases Egan's skills, work experience, and contributions to various projects.
+This is my portfolio website, as Full-Stack Software Engineer and Entrepreneur. The website showcases my skills, work experience, and contributions to various projects.
 
 ## Table of Contents
 
