@@ -31,14 +31,12 @@ function App() {
         return (
           <>
             <Projects />
-            <Footer />
           </>
         );
       case "blog":
         return (
           <>
             <Blog />
-            <Footer />
           </>
         );
       default:

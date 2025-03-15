@@ -5,10 +5,10 @@ const projectsData = [
   {
     image: "images/portfolio.png",
     title: "Egan.com",
-    description: "This is the portfolio website of Egan Ombaka, a Full-Stack Software Engineer and Entrepreneur. The website showcases Egan's skills, work experience, and contributions to various projects.",
+    description: "This is my personal portfolio website that showcases my skills, work experience, and contributions to various projects.",
     tech: ["REACT", "CSS", "VERCEL"],
     webLink: "",
-    sourceCodeLink: ""
+    sourceCodeLink: "https://github.com/Egan-ombaka/egan.com"
   },
   //more projects
   {
@@ -31,6 +31,10 @@ const projectsData = [
 ];
 
 const Projects = () => {
+  const handleButtonClick = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className='projects-section'>
       <div className='project-container'>
@@ -46,8 +50,8 @@ const Projects = () => {
                 ))}
               </div>
               <div className='project-links'>
-                <button><a href={project.webLink}>Web</a></button>
-                <button><a href={project.sourceCodeLink}>Source Code</a></button>
+                <button onClick={() => handleButtonClick(project.webLink)}>Web</button>
+                <button onClick={() => handleButtonClick(project.sourceCodeLink)}>Source Code</button>
               </div>
             </div>
           </div>
